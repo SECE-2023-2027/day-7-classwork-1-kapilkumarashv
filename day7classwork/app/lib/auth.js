@@ -5,7 +5,7 @@ export function registerUser(username, password) {
 
   const key = `user_${username}`;
   if (localStorage.getItem(key)) {
-    return false; // user already exists
+    return false; 
   }
 
   localStorage.setItem(key, password);
